@@ -18,12 +18,72 @@
   }
 }
 
+
+
 body {
-    font-family: "Inter", sans-serif
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden
+}
+
+@layer base {
+  .max-width {
+    @apply max-w-[1440px] mx-auto;
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+
+  .flex-col-center {
+    @apply flex flex-col justify-center items-center
+  }
+  
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+.sidebar-close {
+  position: absolute;
+  top: 0;
+  left: -500px;
+  z-index: 100;
+  animation: closeMenu 0.1s ease-in;
+  -webkit-animation: closeMenu 0.1s ease-in;
+}
+
+@keyframes closeMenu {
+  0%{
+    left: 0px;
+  } 100% {
+    left: -500px;
+  }
+}
+
+.sidebar-open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 70%;
+  z-index: 100;
+  animation: openMenu 0.1s ease-out;
+  -webkit-animation: openMenu 0.1s ease-out;
+}
+
+@keyframes openMenu {
+  0% {
+    width: 0%;
+  }
+  100%{
+    width: 70%;
   }
 }
