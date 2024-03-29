@@ -18,9 +18,9 @@ export default function RootLayout({
       <body>
         <div className="flex items-start justify-start">
           <Sidebar />
-          <div className="w-full">
+          <div className="h-full w-full">
             <Navbar />
-            <div className="bg-[#F5F7FA]">{children}</div>
+            <div className="h-full bg-[#fff] lg:bg-[#F5F7FA]">{children}</div>
           </div>
         </div>
       </body>

@@ -18,7 +18,7 @@ const Sidebar = () => {
   return (
     <section
       id="sidebar"
-      className="sidebar-close bg-[#fff] lg:sticky lg:left-0 lg:top-0 lg:block lg:h-[100vh] lg:w-56 lg:min-w-56 lg:border-r lg:border-[#E6EFF5]"
+      className="sidebar-close bg-[#fff] lg:sticky lg:left-0 lg:top-0  lg:h-[100vh] lg:w-56 lg:min-w-56 lg:border-r lg:border-[#E6EFF5]"
     >
       <div className="flex-center relative h-20 gap-4">
         <Image src={'/icons/ic_logo.svg'} alt="logo" width={32} height={32}></Image>

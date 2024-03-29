@@ -15,6 +15,10 @@ const config: Config = {
       turquoise: '#16DBAA',
       coral: '#FE5C73',
       gray: '#B1B1B1',
+      white: '#fff',
+    },
+    fontFamily: {
+      lato: ['Lato', 'sans-serif'],
     },
   },
   plugins: [],
