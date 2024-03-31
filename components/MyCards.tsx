@@ -3,9 +3,10 @@ import React from 'react'
 
 const MyCards = () => {
   return (
-    <section id="my-cards" className="relative overflow-auto pl-6">
+    <div className="relative overflow-auto pl-6">
       <div className="relative w-[600px] md:w-full">
         <div className="flex gap-6 overflow-x-auto md:pr-5 lg:justify-start lg:pr-0">
+          {/* first card */}
           <div className="bg-cards-custom relative flex w-64 flex-col justify-between gap-6 rounded-2xl p-5 md:w-full lg:h-48  xl:h-[14rem] xl:max-w-96 ">
             <div className="flex-between">
               <div>
@@ -41,7 +42,8 @@ const MyCards = () => {
             </div>
             <div className="custom-bottom-card absolute bottom-0 left-0"></div>
           </div>
-          <div className="flex w-64 flex-col justify-between  gap-6 rounded-2xl border border-[#DFEAF2] p-5 md:w-full lg:h-48  xl:h-[14rem] xl:max-w-96 ">
+          {/* second card */}
+          <div className="bg-white flex w-64 flex-col justify-between gap-6 rounded-2xl border border-[#DFEAF2] p-5 md:w-full lg:h-48  xl:h-[14rem] xl:max-w-96 ">
             <div className="flex-between">
               <div>
                 <p className="font-lato text-[0.6rem] text-[#718EBF]">Balance</p>
@@ -83,7 +85,7 @@ const MyCards = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 

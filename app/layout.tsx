@@ -20,7 +20,7 @@ export default function RootLayout({
           <Sidebar />
           <div className="h-full w-full">
             <Navbar />
-            <div className="h-full bg-[#fff] lg:bg-[#F5F7FA]">{children}</div>
+            <div className="h-full max-w-7xl bg-[#fff] pb-6 lg:bg-[#F5F7FA]">{children}</div>
           </div>
         </div>
       </body>

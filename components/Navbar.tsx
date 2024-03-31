@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <section
       id="navbar"
-      className="sticky top-0 flex flex-col gap-5 bg-[#fff] p-6 lg:flex lg:h-20 lg:border-b lg:border-[#E6EFF5] lg:p-6"
+      className="sticky top-0 z-50 flex flex-col gap-5 bg-[#fff] p-6 lg:flex lg:h-20 lg:border-b lg:border-[#E6EFF5] lg:p-6"
     >
       <div className="flex-between gap-4">
         <div className="cursor-pointer lg:hidden" onClick={handleOpenMenu}>
