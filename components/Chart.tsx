@@ -15,7 +15,7 @@ const MyChart: React.FC = () => {
   ]
 
   return (
-    <div className="bg-white h-64 max-w-80 rounded-2xl px-6 pb-12 pt-6 md:max-w-96 lg:max-w-4xl xl:px-8 ">
+    <div className="h-64 max-w-80 rounded-2xl bg-white px-6 pb-12 pt-6 md:max-w-96 lg:max-w-4xl xl:px-8 ">
       <div className="flex-center  justify-end gap-8">
         <div className="flex-center gap-2">
           <div className="h-3 w-3 rounded-full bg-turquoise opacity-70"></div>
@@ -48,7 +48,7 @@ const MyChart: React.FC = () => {
             <span className="text-xs font-normal text-light_blue">100</span>
             <div className="mb-[3px] h-px w-full bg-[#F3F3F5]"></div>
           </div>
-          <div className="relative flex items-end justify-start gap-3">
+          <div className="relative flex items-end justify-start gap-3 text-end">
             <span className="text-xs font-normal text-light_blue">0</span>
             <div className="mb-[3px] h-px w-full bg-[#F3F3F5]"></div>
           </div>
