@@ -72,26 +72,54 @@ body {
   }
 }
 
-.sidebar-open {
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  height: 100vh;
-  width: 70%;
-  z-index: 100;
-  animation: openMenu 0.1s ease-out;
-  -webkit-animation: openMenu 0.1s ease-out;
+@media screen and (min-width: 768px){
+  .sidebar-open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 40%;
+    z-index: 100;
+    animation: openMenu 0.1s ease-out;
+    -webkit-animation: openMenu 0.1s ease-out;
+  }
+  
+  @keyframes openMenu {
+    0% {
+      width: 0%;
+    }
+    100%{
+      width: 40%;
+    }
+  }
 }
 
-@keyframes openMenu {
-  0% {
-    width: 0%;
-  }
-  100%{
+@media screen and (max-width: 425px){
+  .sidebar-open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 100vh;
     width: 70%;
+    z-index: 100;
+    animation: openMenu 0.1s ease-out;
+    -webkit-animation: openMenu 0.1s ease-out;
+  }
+  
+  @keyframes openMenu {
+    0% {
+      width: 0%;
+    }
+    100%{
+      width: 70%;
+    }
   }
 }
+
+
+
 
 /* css my card */
 .custom-bottom-card{

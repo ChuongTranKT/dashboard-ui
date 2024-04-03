@@ -10,7 +10,7 @@ const BalanceHistory = () => {
   }, [])
 
   return (
-    <div className="relative  rounded-2xl bg-white px-5 py-3 md:max-w-96 lg:h-56 lg:max-w-3xl xl:h-72">
+    <div className="relative  h-56 rounded-2xl bg-white px-5 py-3 md:max-w-96 lg:h-60 lg:max-w-3xl xl:h-72">
       <div className="relative flex">
         <div className=" flex w-[10%] flex-col items-end justify-center gap-4 lg:gap-5 xl:gap-7">
           <div className="flex items-center gap-1">

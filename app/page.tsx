@@ -16,7 +16,10 @@ export default function DashboardPage() {
           </div>
           <MyCards />
         </section>
-        <section id="recent-transaction" className="lg:w-1/3">
+        <section id="recent-transaction" className="flex flex-col gap-3 px-6 lg:w-1/3">
+          <div>
+            <p className="text-base font-semibold">Recent Transaction</p>
+          </div>
           <RecentTransaction />
         </section>
       </div>

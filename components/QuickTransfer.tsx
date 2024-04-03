@@ -124,7 +124,7 @@ const QuickTransfer = () => {
     }
   }
   return (
-    <div className="relative flex h-52 w-full snap-x flex-col justify-center gap-6 rounded-2xl bg-white p-4 lg:h-56 xl:h-72 xl:gap-14">
+    <div className="relative flex h-52 w-full snap-x flex-col justify-center gap-6 rounded-2xl bg-white p-4 lg:h-60 xl:h-72 xl:gap-14">
       <div
         ref={sliderRef}
         className="relative flex w-[90%] cursor-pointer items-center justify-start gap-4 overflow-x-hidden scroll-smooth lg:gap-4 xl:w-[85%]"
@@ -144,14 +144,14 @@ const QuickTransfer = () => {
         ))}
       </div>
       <div
-        className={`flex-center right-arrow absolute right-4 top-9 z-20 h-[40px] w-[40px] ${isAtEndSlide ? 'cursor-not-allowed' : 'cursor-pointer'} rounded-full bg-white p-1 opacity-70 shadow-md xl:top-14`}
+        className={`flex-center right-arrow absolute right-4 top-9 z-20 h-[40px] w-[40px] ${isAtEndSlide ? 'cursor-not-allowed' : 'cursor-pointer'} rounded-full bg-white p-1 opacity-70 shadow-md lg:top-12 xl:top-14`}
         onClick={handleNextSlide}
       >
         <Image src={'/icons/ic_right-arrow.png'} width={16} height={16} alt="right arrow"></Image>
       </div>
       {!isAtStartSlide && (
         <div
-          className="flex-center left-arrow absolute left-4 top-9 z-20 h-[40px] w-[40px] cursor-pointer  rounded-full bg-white p-1 opacity-70 shadow-lg xl:top-14"
+          className="flex-center left-arrow absolute left-4 top-9 z-20 h-[40px] w-[40px] cursor-pointer  rounded-full bg-white p-1 opacity-70 shadow-lg lg:top-12 xl:top-14"
           onClick={handlePrevSlide}
         >
           <Image src={'/icons/ic_left-arrow.png'} width={16} height={16} alt="left arrow"></Image>

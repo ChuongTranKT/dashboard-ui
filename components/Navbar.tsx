@@ -1,7 +1,24 @@
 'use client'
+import { MENU } from '@/constants'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
+import { useEffect, useState } from 'react'
 
 const Navbar = () => {
+  const [menuTitle, setMenuTitle] = useState('')
+  const currentPath = usePathname()
+
+  useEffect(() => {
+    if (currentPath === '/') {
+      setMenuTitle('Overview')
+    } else if (currentPath) {
+      const title = MENU.find((item) => item.url == currentPath.toString())
+      if (title) {
+        setMenuTitle(title?.label)
+      }
+    }
+  }, [currentPath])
+
   const handleOpenMenu = () => {
     const sidebar = document.getElementById('sidebar')
     sidebar?.classList.remove('sidebar-close')
@@ -17,7 +34,7 @@ const Navbar = () => {
           <Image src={'/icons/ic_menu.svg'} width={14} height={18} alt="menu"></Image>
         </div>
         <div>
-          <p className="text-xl font-[600] text-purple lg:text-[1.5rem]">Overview</p>
+          <p className="text-xl font-[600] text-purple lg:text-[1.5rem]">{menuTitle}</p>
         </div>
         <div className="flex items-center justify-end gap-5">
           <div className="hidden h-[2.5rem] w-full items-end justify-start gap-3 rounded-full bg-[#F5F7FA] py-3 pl-5 pr-10 lg:flex">

@@ -20,7 +20,7 @@ export default function RootLayout({
           <Sidebar />
           <div className="h-full w-full bg-[#fff] pb-6 lg:bg-[#F5F7FA]">
             <Navbar />
-            <div className="flex h-full max-w-7xl flex-col justify-center bg-[#fff] pb-6 lg:bg-[#F5F7FA]">
+            <div className="flex h-full max-w-7xl flex-col justify-center  bg-[#F5F7FA] pb-6">
               {children}
             </div>
           </div>
